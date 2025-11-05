@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me | Alexander Lidwin Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+    <style>
+        /* Optional: Add a little padding to the cards for better visual separation if not in main.css */
+        .card-container {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+            <a class="navbar-brand" href="#">Alexander Lidwin</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="gap: 1em;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/about.html">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/research/research.html" id="navbardrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Research
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/research/ongoing.html">Ongoing Research</a></li>
+                            <li><a class="dropdown-item" href="/research/past.html">Past Research</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- BANNER USING IMG TAG -->
+        <section class="container-fluid p-0 position-relative">
+            <img src="pictures/3d-flowing-cyber-particles-with-shallow-depth-field.jpg" class="w-100" style="height: 350px; object-fit: cover;" alt="About Me Banner">
+
+            <!-- Overlay text -->
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-light w-100">
+                <h1 class="display-4 fw-bold">About Me</h1>
+                <p class="lead mb-0">Exploring the intersection of technology, research, and healthcare. Senior at NJIT specializing in IT and Management Information Systems.</p>
+            </div>
+        </section>
+
+
+        <!-- CARDS -->
+        <!-- CARDS -->
+        <section class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">My Background</h2>
+                <p class="text-muted">A snapshot of my academic, research, and professional journey.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- CARD TEMPLATE -->
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-book display-5 text-info"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Academic Focus</h5>
+                            <p class="card-text text-muted small">
+                                Senior at NJIT in Information Technology with a concentration in MIS, focusing on IT systems, project leadership, and medical AI.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-robot display-5 text-info"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Core Research Interest</h5>
+                            <p class="card-text text-muted small">
+                                Developing evaluation metrics for medical image captioning to improve the reliability of AI-generated radiology reports.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-flask-fill display-5 text-info"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Undergraduate Research</h5>
+                            <p class="card-text text-muted small">
+                                Under Dr. Fadi P. Deek, I develop reproducible Python and PyTorch pipelines and evaluate models using datasets like MIMIC-CXR and CheXpert.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-briefcase-fill display-5 text-info"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Professional Experience</h5>
+                            <p class="card-text text-muted small">
+                                Assistant Administrator at Bergen Community College, managing large-scale testing operations with ADA and FERPA compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-graph-up display-5 text-info"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Career Trajectory & Goals</h5>
+                            <p class="card-text text-muted small">
+                                Planning to pursue an MBA and PhD, advancing ethical, transparent, and impactful AI in healthcare leadership.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-bicycle display-5 text-info"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Extracurricular & Interests</h5>
+                            <p class="card-text text-muted small">
+                                Tutoring youth in STEM, cycling, hiking, attending concerts, and developing creative portfolio projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer page-footer font-small ">
+            <div class="container">
+                <div class="row">
+                    <span class="text-muted">&copy; 2025 Alexander Lidwin. All rights reserved. |  Terms Of Use  |  Privacy Statement</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+</div>
+</body>
+</html>

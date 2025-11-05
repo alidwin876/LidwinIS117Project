@@ -10,88 +10,149 @@
           crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
 
+
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
-            <nav class="navbar navbar-expand-md
+        <nav class="navbar navbar-expand-md
                     justify-content-start
                     bg-dark navbar-dark
                     col-12">
 
-                <!-- Brand -->
-                <a class="navbar-brand" href="#">Logo</a>
-                <!-- Responsive Button for the smaller menu -->
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <!-- Links -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Alexander Lidwin</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="gap: 1em;">
+                    <!-- Links -->
+                    <!-- DEVELOPER: Alexander Lidwin, IS117-005, Fall 2025 -->
+                    <li class="nav-item">
+                        <!-- changing the names of the links in the nav bar -->
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About Me</a>
+                    </li>
+                    <!-- I moved the dropdown here because it is where it appears in my wireframe -->
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/research/research.html" id="navbardrop">
+                            Research
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/research/ongoing.html">Ongoing Research</a></li>
+                            <li><a class="dropdown-item" href="/research/past.html">Past Research</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-                        <!-- Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Education
+
+            <!-- Both columns must be inside the same .row -->
+            <div class="row justify-content-center my-5">
+
+                <!-- LEFT COLUMN -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="bg-dark text-light p-4 rounded shadow-sm border border-secondary">
+                        <h5 class="fw-bold mb-3 text-center text-uppercase">Contact Me</h5>
+
+                        <div class="mb-3 text-center">
+                            <strong>Email:</strong><br>
+                            <a href="al876@njit.edu" class="text-decoration-none text-info">al876@njit.edu</a>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <strong>Phone:</strong><br>
+                            <a href="2014681624" class="text-decoration-none text-info">(201) 468-1624</a>
+                        </div>
+
+                        <h5 class="fw-bold mb-3 mt-4 text-center text-uppercase">Professional Profiles</h5>
+                        <hr class="border-light">
+
+                        <!-- Inline flex container for horizontal layout -->
+                        <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com/in/alidwin" target="_blank" class="d-flex align-items-center text-decoration-none text-light">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                                     alt="LinkedIn" width="26" height="26"
+                                     class="me-2"
+                                     style="filter: invert(74%) sepia(12%) saturate(1351%) hue-rotate(175deg) brightness(92%) contrast(87%);">
+                                <span>LinkedIn</span>
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                                <a class="dropdown-item" href="#">Link 4</a>
-                            </div>
-                        </li>
-                    </ul>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/alidwin876" target="_blank" class="d-flex align-items-center text-decoration-none text-light">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+                                     alt="GitHub" width="26" height="26"
+                                     class="me-2"
+                                     style="filter: invert(100%);">
+                                <span>GitHub</span>
+                            </a>
+
+                            </a>
+                        </div>
+
+                        <!-- Image centered and smaller -->
+                        <div class="mt-4 text-center">
+                            <img src="pictures/picture1.jpg" class="img-fluid rounded-circle shadow-sm" style="width: 120px; height: 120px; object-fit: cover;" alt="Lab photo">
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        <div class="container">
-          <div class="row">
-            <form action="">
-                <div class="form-group">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" class="form-control" id="firstname"
-                           placeholder="First name" name="firstname">
+
+                <!-- RIGHT COLUMN -->
+                <div class="col-md-6 col-lg-5">
+                    <form class="bg-light p-4 rounded">
+                        <h5 class="fw-bold mb-3">Send a Message</h5>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="First name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Last name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Message..." required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-secondary rounded-pill">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" class="form-control" id="lastname"
-                           placeholder="Last name" name="lastname">
+
+            </div> <!-- END ROW -->
+        </div> <!-- END CONTAINER -->
+
+
+        <footer class="footer page-footer font-small ">
+            <div class="container">
+                <div class="row">
+                    <span class="text-muted">&copy; 2025 Alexander Lidwin. All rights reserved. |  Terms Of Use  |  Privacy Statement</span>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email"
-                           placeholder="Enter email" name="email">
-                </div>
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input"
-                               type="checkbox" name="subscribe"> Subscribe
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </row>
-</div>
-        </div>
- <footer class="footer page-footer font-small ">
-     <div class="container">
-        <div class="row">
-            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
-        </div>
-     </div>
-  </footer>
-</div>
+            </div>
+        </footer>
+    </div>
+
 
 
     <!-- Javascript Bundle with Popper -->
