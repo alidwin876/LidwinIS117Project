@@ -12,10 +12,9 @@
 
     <style>
         .card-img-placeholder {
-            /* Placeholder styles for the image box */
             width: 100%;
-            height: 150px; /* Smaller square size */
-            background-color: #e9ecef; /* Light gray background */
+            height: 150px;
+            background-color: #e9ecef;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -24,71 +23,63 @@
             border: 1px solid #dee2e6;
         }
         .text-section {
-            min-height: 150px; /* Ensure a minimum height for the text area */
+            min-height: 150px;
+        }
+        .card-footer img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
-
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
-
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="#">Alexander Lidwin</a>
-                    <!-- Responsive Button for the smaller menu -->
-                    <button class="navbar-toggler" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav" style="gap: 1em;">
-                            <!-- Links -->
-                            <!-- DEVELOPER: Alexander Lidwin, IS117-005, Fall 2025 -->
-                            <li class="nav-item">
-                                <!-- changing the names of the links in the nav bar -->
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Me</a>
-                            </li>
-                            <!-- I moved the dropdown here because it is where it appears in my wireframe -->
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="research/research.html" id="navbardrop">
-                                    Research
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="research/ongoing.html">Ongoing Research</a></li>
-                                    <li><a class="dropdown-item" href="research/past.html">Past Research</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="resume.html">Resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="work.html">Work</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
+        <nav class="navbar navbar-expand-md justify-content-start bg-dark navbar-dark col-12">
+            <a class="navbar-brand" href="../index.html">Alexander Lidwin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="gap: 1em;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="research.html" id="navbardrop">
+                            Research
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ongoing.html">Ongoing Research</a></li>
+                            <li><a class="dropdown-item" href="past.html">Past Research</a></li>
                         </ul>
-                    </div>
-                </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <main class="col-12 py-5">
             <div class="container">
-
-                <!-- Back to Research Hub Button -->
                 <div class="mb-4">
                     <a href="research.html" class="btn btn-outline-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                         </svg>
                         Back to Research Hub
                     </a>
@@ -96,45 +87,55 @@
 
                 <h1 class="display-4 fw-bold mb-4 text-dark text-center">Past Research</h1>
                 <p class="lead text-muted text-center mb-5">
-                    A summary of previous research, completed projects, and publications that have shaped my technical foundation and current work.
+                    A look back at prior academic and technical projects that formed the groundwork for my current research interests and technical skillset.
                 </p>
                 <hr class="mb-5">
 
                 <div class="row row-cols-1 row-cols-md-2 g-5">
 
+                    <!-- Waksman Student Scholars Program -->
                     <div class="col">
                         <div class="card shadow-sm h-100 p-3">
                             <div class="card-body text-section">
-                                <h5 class="card-title fw-bold text-primary">Explorations in Latent-Space for MIC</h5>
-                                <h6 class="card-subtitle mb-3 text-muted">Field: AI & Bioinformatics</h6>
+                                <h5 class="card-title fw-bold text-primary">Waksman Student Scholars Program</h5>
+                                <h6 class="card-subtitle mb-3 text-muted">Field: Molecular Biology & Bioinformatics</h6>
                                 <p class="card-text">
-                                    In my MIC research stage, I conducted experiments with various machine learning models (e.g., VAE, WGAN, and METFOR). These studies helped me understand the strengths and limitations of purely latent approaches, particularly when trying to generalize predictive power across diverse populations.
+                                    Conducted DNA sequence analysis as part of the Waksman Student Scholars Program in collaboration with Rutgers University.
+                                    Utilized NCBI BLAST tools and bioinformatics databases to identify novel gene sequences from environmental DNA samples,
+                                    contributing verified data entries to GenBank.
                                 </p>
                                 <p class="card-text small text-muted">
-                                    <em>This early analysis motivated my shift toward investigating generative model specific metrics.</em>
+                                    <em>This project provided early exposure to experimental genomics, data validation workflows, and the scientific publication process.</em>
                                 </p>
                             </div>
-                            <div class="card-footer bg-white border-0 pt-0">
-                                <div class="card-img-placeholder">
-                                    [Image Placeholder: VAE/WGAN Model]
-                                </div>
+                            <div class="card-footer bg-white border-0 pt-0 text-center">
+                                <img src="../pictures/genomesequencing.webp" alt="Genome Sequencing">
+                                <a href="https://www.ncbi.nlm.nih.gov/nuccore/1998516943" target="_blank" class="btn btn-outline-primary btn-sm">
+                                    View Publication on NCBI
+                                </a>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Game Development 3SP Project -->
                     <div class="col">
                         <div class="card shadow-sm h-100 p-3">
                             <div class="card-body text-section">
-                                <h5 class="card-title fw-bold text-success">Web Application (PHP/SQL)</h5>
-                                <h6 class="card-subtitle mb-3 text-muted">Field: Web Development</h6>
+                                <h5 class="card-title fw-bold text-success">Game Development 3SP Project</h5>
+                                <h6 class="card-subtitle mb-3 text-muted">Field: Interactive Systems & Software Design</h6>
                                 <p class="card-text">
-                                    Built functional prototypes of a data-driven web application using PHP/SQL. This provided deep learning in data management, security, and user interaction design.
+                                    Designed and developed a 2D game using the Unity engine as part of the 3SP initiative, focusing on gameplay mechanics, object collision, and dynamic scene management.
+                                    Implemented object-oriented programming principles and efficient C# scripting to create responsive and scalable game interactions.
+                                </p>
+                                <p class="card-text small text-muted">
+                                    <em>This experience strengthened my applied understanding of software architecture, event systems, and user engagement design.</em>
                                 </p>
                             </div>
-                            <div class="card-footer bg-white border-0 pt-0">
-                                <div class="card-img-placeholder">
-                                    [Image Placeholder: Network Diagram / PHP Code]
-                                </div>
+                            <div class="card-footer bg-white border-0 pt-0 text-center">
+                                <img src="../pictures/unrealengine5.png" alt="Unreal Engine 5">
+                                <a href="https://www.youtube.com/watch?v=lQ1StqzKDfY" target="_blank" class="btn btn-outline-success btn-sm">
+                                    Watch Game Trailer
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -153,11 +154,8 @@
     </div>
 </div>
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-</script>
-
+        crossorigin="anonymous"></script>
 </body>
 </html>

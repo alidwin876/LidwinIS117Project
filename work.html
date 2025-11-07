@@ -8,132 +8,164 @@
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
-    <link href="/css/main.css" rel="stylesheet">
-
 </head>
-<body>
+
+<body class="bg-light">
 <div class="container-fluid">
     <div class="row">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark col-12">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Alexander Lidwin</a>
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+                        aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbardrop">
+                                <li><a class="dropdown-item" href="research/ongoing.html">Ongoing Research</a></li>
+                                <li><a class="dropdown-item" href="research/past.html">Past Research</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="work.html">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center fw-bold mb-5">Work Experience</h1>
 
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="#">Alexander Lidwin</a>
-                    <!-- Responsive Button for the smaller menu -->
-                    <button class="navbar-toggler" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav" style="gap: 1em;">
-                            <!-- Links -->
-                            <!-- DEVELOPER: Alexander Lidwin, IS117-005, Fall 2025 -->
-                            <li class="nav-item">
-                                <!-- changing the names of the links in the nav bar -->
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Me</a>
-                            </li>
-                            <!-- I moved the dropdown here because it is where it appears in my wireframe -->
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="research/research.html" id="navbardrop">
-                                    Research
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="research/ongoing.html">Ongoing Research</a></li>
-                                    <li><a class="dropdown-item" href="research/past.html">Past Research</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="resume.html">Resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="work.html">Work</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
+        <div class="row g-4">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold text-primary">Assistant Administrator of Testing Services</h5>
+                        <p class="text-muted mb-2"><strong>Bergen Community College</strong> | Apr 2024 – Present</p>
+                        <p class="text-muted small mb-3"><em>7 months</em></p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">✓ Streamlined testing workflows for <strong>500+ students monthly</strong>, cutting wait times by <strong>~20%</strong></li>
+                            <li class="mb-2">✓ Resolved a financial-aid screening vulnerability, preventing potential <strong>fraud</strong></li>
+                            <li class="mb-2">✓ Ensured <strong>ADA & FERPA compliance</strong> with accurate testing accommodations</li>
                         </ul>
-                    </div>
-                </nav>
 
-        <main class="col-12 py-5">
-            <div class="container">
+                        <hr>
 
-                <h1 class="display-4 fw-bold mb-3 text-dark text-center">Work Experience</h1>
+                        <h5 class="card-title fw-semibold text-primary">Medical AI Research Intern</h5>
+                        <p class="text-muted mb-2"><strong>New Jersey Institute of Technology</strong> | May 2024 – Present</p>
+                        <p class="text-muted small mb-3"><em>6 months</em></p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">✓ Evaluated <strong>AI captioning models</strong> on MIMIC-CXR, CheXpert & RadGraph datasets</li>
+                            <li class="mb-2">✓ Developed error analysis pipelines to <strong>reduce hallucinations</strong> in captions</li>
+                        </ul>
 
-                <p class="lead text-muted text-center mb-5">
-                    This page highlights my professional roles, responsibilities, and accomplishments in IT, research, and higher education.
-                </p>
+                        <hr>
 
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <h5 class="card-title fw-semibold text-primary">Technical Intern</h5>
+                        <p class="text-muted mb-2"><strong>Bergen Community College</strong> | Jan 2024 – Sep 2024</p>
+                        <p class="text-muted small mb-3"><em>9 months</em></p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">✓ Built a <strong>$150 IoT air-quality monitor</strong> to detect hazardous VOCs</li>
+                            <li class="mb-2">✓ Integrated <strong>Arduino Cloud and IFTTT</strong> for SMS-based alerts</li>
+                        </ul>
 
-                    <div class="col">
-                        <div class="card shadow-sm h-100 p-4 border-start border-5 border-primary">
-                            <div class="card-body">
-                                <h2 class="card-title text-primary fw-bold">Current Role: Administration</h2>
-                                <h4 class="card-subtitle mb-3 text-muted">Assistant Administrator of Testing Services – Bergen Community College</h4>
-                                <hr>
+                        <hr>
 
-                                <p class="fw-bold mt-4">Key Responsibilities & Accomplishments:</p>
-                                <ul>
-                                    <li>**Streamlined student workflows** and scheduling procedures for large-scale academic testing operations.</li>
-                                    <li>Actively **ensured compliance** with ADA (Americans with Disabilities Act) and FERPA (Family Educational Rights and Privacy Act) standards.</li>
-                                    <li>**Coordinated across departments** to improve efficiency, accessibility, and the quality of student services.</li>
-                                </ul>
-
-                                <a href="/resume.html" class="btn btn-sm btn-outline-primary mt-3">View Full Role Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm h-100 p-4 border-start border-5 border-success">
-                            <div class="card-body">
-                                <h2 class="card-title text-success fw-bold">Technical & Development Work</h2>
-                                <h4 class="card-subtitle mb-3 text-muted">A look at my independent coding projects.</h4>
-                                <hr>
-
-                                <h5 class="fw-bold mt-4 text-dark">Java Projects</h5>
-                                <ul class="mb-4">
-                                    <li>**Multi-threaded server-client communication system** with room-based messaging functionality.</li>
-                                </ul>
-
-                                <h5 class="fw-bold text-dark">Web Development Projects</h5>
-                                <ul>
-                                    <li>**Favorites Music Web App (PHP/SQL)** with integrated search, filtering, and admin controls.</li>
-                                    <li>**Portfolio website design and development** (This very site) showcasing proficiency in HTML, CSS, and Bootstrap.</li>
-                                </ul>
-
-                            </div>
-                        </div>
+                        <h5 class="card-title fw-semibold text-primary">Department Chair Secretary</h5>
+                        <p class="text-muted mb-2"><strong>Bergen Community College</strong> | Jun 2023 – Aug 2023</p>
+                        <p class="text-muted small mb-3"><em>3 months</em></p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">✓ Coordinated <strong>faculty scheduling</strong>, communications, and meeting logistics</li>
+                            <li class="mb-2">✓ Organized departmental files and managed <strong>academic records</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </main>
 
-        <footer class="footer page-footer font-small">
-            <div class="container">
-                <div class="row">
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold text-primary">Laboratory & Physics Lab Assistant</h5>
+                        <p class="text-muted mb-2"><strong>Bergen Community College</strong> | Sep 2023 – May 2024</p>
+                        <p class="text-muted small mb-3"><em>9 months</em></p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">✓ Prepared experiments, ensured <strong>lab safety compliance</strong>, and assisted instructors</li>
+                            <li class="mb-2">✓ Maintained <strong>chemical inventory</strong> and experimental documentation</li>
+                        </ul>
+
+                        <hr>
+
+                        <h5 class="card-title fw-semibold text-primary">Library Staff</h5>
+                        <p class="text-muted mb-2"><strong>Richard A. Mola Public Library</strong> | Sep 2022 – Aug 2023</p>
+                        <p class="text-muted small mb-3"><em>1 year</em></p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">✓ Assisted patrons, managed <strong>front-desk operations</strong>, and processed new books</li>
+                            <li class="mb-2">✓ Handled <strong>closing procedures</strong>, finances, and security checks</li>
+                        </ul>
+
+                        <hr>
+
+                        <h5 class="card-title fw-semibold text-primary">Lawyer's Assistant</h5>
+                        <p class="text-muted mb-2"><strong>David Scilleri, Attorney at Law</strong> | Oct 2021 – Apr 2023</p>
+                        <p class="text-muted small mb-3"><em>1 year 7 months</em></p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">✓ Organized <strong>client case files</strong> and coordinated legal document handling</li>
+                            <li class="mb-2">✓ Supported attorneys with <strong>evidence tracking</strong> and administrative tasks</li>
+                        </ul>
+
+                        <hr>
+
+                        <h5 class="card-title fw-semibold text-primary">Babysitter</h5>
+                        <p class="text-muted mb-2"><strong>Private Employer</strong> | Nov 2022 – Present</p>
+                        <p class="text-muted small mb-3"><em>2 years 1 month</em></p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">✓ Provided <strong>after-school care</strong>, tutoring, and meal prep for children</li>
+                            <li class="mb-2">✓ Maintained structured daily routines ensuring <strong>safety and stability</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5 py-4 bg-light border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col">
                     <span class="text-muted">&copy; 2025 Alexander Lidwin. All rights reserved. | Terms Of Use | Privacy Statement</span>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </div>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-</script>
-
+        crossorigin="anonymous"></script>
 </body>
 </html>
