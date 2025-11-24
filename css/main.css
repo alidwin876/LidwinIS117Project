@@ -38,6 +38,24 @@
     transform: translateY(-5px);
 }
 
+/* Full Resume Section Container Styling (for the whole block + title) */
+.resume-section-container {
+    padding: 1.5rem; /* Padding for the entire container */
+    margin-bottom: 2rem; /* Space below the container */
+    border-radius: 0.5rem;
+    background-color: #f8f9fa; /* Light background for the section */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #dee2e6; /* subtle border */
+}
+
+.resume-section-container:hover {
+    transform: translateY(-8px); /* More lift for the whole section */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important; /* More pronounced shadow */
+    cursor: pointer;
+    background-color: #ffffff; /* White background on hover */
+}
+
+
 /* Optional: Clickable Card Hover Effect (for index.html) */
 .clickable-card {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -52,12 +70,32 @@
 .research-img {
     height: 120px; /* Adjust this height as needed to fit your design */
     object-fit: cover;
+    /* NEW: Add transition for smooth scaling */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
- .card-footer img {
-     width: 100%;
-     height: 200px;
-     object-fit: cover;
-     border-radius: 0.25rem;
-     margin-bottom: 1rem;
- }
+/* NEW: Hover effect to make the image "pop" */
+.research-img:hover {
+    transform: scale(1.05); /* Scales the image up by 5% */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important; /* Adds a noticeable shadow */
+    cursor: pointer;
+}
+
+.card-footer img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+/* NEW: Hover effect for Work Experience Cards */
+.hover-lift-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-lift-card:hover {
+    transform: translateY(-8px); /* Lifts the card up by 8 pixels */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important; /* Applies a larger, more prominent shadow */
+    cursor: pointer;
+}
