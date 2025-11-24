@@ -1,3 +1,6 @@
+/* DEVELOPER: Alexander Lidwin, IS117-005, Fall 2025 */
+
+
 .footer {
     position: fixed;
     left: 0;
@@ -89,13 +92,57 @@
     margin-bottom: 1rem;
 }
 
-/* NEW: Hover effect for Work Experience Cards */
+/* Work Experience Cards - Hover Lift Effect */
 .hover-lift-card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .hover-lift-card:hover {
-    transform: translateY(-8px); /* Lifts the card up by 8 pixels */
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important; /* Applies a larger, more prominent shadow */
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
     cursor: pointer;
+}
+
+/* Work Experience Page - Banner Text Styling */
+.work-banner-text {
+    max-width: 800px;
+    color: #ced4da;
+}
+
+/* Work Experience Page - Main Container */
+.work-container {
+    max-width: 1400px;
+}
+
+/* Work Experience Page - Card Border Colors */
+.work-card-blue {
+    border-left: 4px solid #0d6efd !important;
+}
+
+.work-card-purple {
+    border-left: 4px solid #6f42c1 !important;
+}
+
+.work-card-yellow {
+    border-left: 4px solid #ffc107 !important;
+}
+
+.work-card-orange {
+    border-left: 4px solid #fd7e14 !important;
+}
+
+.work-card-green {
+    border-left: 4px solid #198754 !important;
+}
+
+.work-card-cyan {
+    border-left: 4px solid #0dcaf0 !important;
+}
+
+.work-card-red {
+    border-left: 4px solid #dc3545 !important;
+}
+
+.work-card-teal {
+    border-left: 4px solid #20c997 !important;
 }
