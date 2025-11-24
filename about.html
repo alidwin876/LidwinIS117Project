@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume | Alexander Lidwin</title>
+    <title>About Me | Alexander Lidwin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -19,24 +19,26 @@
                     bg-dark navbar-dark
                     col-12">
 
-            <a class="navbar-brand" href="#">Alexander Lidwin</a>
+            <a class="navbar-brand d-none d-md-block" href="index.html">Alexander Lidwin</a>
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav" style="gap: 1em;">
+                <ul class="navbar-nav gap-3">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="about.html" aria-current="page">About Me</a>
+                        <a class="nav-link" href="about.html">About Me</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="research/research.html" id="navbardrop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Research
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="research/research.html">All Research</a></li>
                             <li><a class="dropdown-item" href="research/ongoing.html">Ongoing Research</a></li>
                             <li><a class="dropdown-item" href="research/past.html">Past Research</a></li>
                         </ul>
@@ -54,79 +56,86 @@
             </div>
         </nav>
 
+
         <section class="container-fluid p-0 position-relative">
-            <img src="pictures/3d-flowing-cyber-particles-with-shallow-depth-field.jpg" class="w-100" style="height: 350px; object-fit: cover;" alt="About Me Banner">
+            <img src="pictures/3d-flowing-cyber-particles-with-shallow-depth-field.jpg" class="w-100 banner-img" alt="About Me Banner">
 
             <div class="position-absolute top-50 start-50 translate-middle text-center text-light w-100">
                 <h1 class="display-4 fw-bold">About Me</h1>
-                <p class="lead mb-0">Exploring the intersection of technology, research, and healthcare.</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <p class="lead mb-0">
+                            I focus on the intersection of information technology, systems architecture, and medical AI research. My work involves developing dependable, efficient solutions that address real-world challenges in clinical and enterprise environments.                   </div>
+                </div>
             </div>
         </section>
 
-
+        <div class="container-fluid bg-dark py-2">
+        </div>
         <section class="container my-5">
             <div class="row g-4 justify-content-center pb-5">
                 <div class="col-12 col-sm-6 col-md-4 d-flex">
-                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                    <div class="card h-100 border-0 shadow-lg text-center card-hover">
                         <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-3">Academic Focus</h5>
-                            <p class="card-text text-muted small">
-                                Senior at NJIT in Information Technology with a concentration in Management Information Systems (MIS). My focus is on IT systems, project leadership, and medical AI.
+                            <h5 class="card-title fw-bold mb-3">Academic Foundation</h5>
+                            <p class="card-text text-dark small">
+                                I am an IT student concentrating on Management Information Systems (MIS), systems architecture, and applied medical AI. My work focuses on delivering efficient, secure technical solutions that bridge business strategy with technological implementation.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 d-flex">
-                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                    <div class="card h-100 border-0 shadow-lg text-center card-hover">
                         <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-3">Core Research Interest</h5>
-                            <p class="card-text text-muted small">
-                                My primary focus is on developing robust evaluation metrics for Medical Image Captioning (MIC). This work aims to improve the reliability and transparency of AI-generated radiology reports.
+                            <h5 class="card-title fw-bold mb-3">AI Research & Evaluation</h5>
+                            <p class="card-text text-dark small">
+                                My primary research area is the rigorous evaluation of Medical Image Captioning (MIC) systems. I work to establish transparent and reproducible metrics that improve the reliability and trustworthiness of AI models in clinical diagnostic pipelines.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 d-flex">
-                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                    <div class="card h-100 border-0 shadow-lg text-center card-hover">
                         <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-3">Research Methodology</h5>
-                            <p class="card-text text-muted small">
-                                Working under Dr. Fadi P. Deek, I develop reproducible Python and PyTorch pipelines. I rigorously evaluate models using large-scale medical datasets, including MIMIC-CXR and CheXpert.
+                            <h5 class="card-title fw-bold mb-3">Technical Methodology</h5>
+                            <p class="card-text text-dark small">
+                                I design and implement specialized PyTorch-based evaluation frameworks. I analyze vast medical imaging datasets, including MIMIC-CXR and CheXpert, to accurately benchmark clinical AI performance.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 d-flex">
-                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                    <div class="card h-100 border-0 shadow-lg text-center card-hover">
                         <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-3">Professional Experience</h5>
-                            <p class="card-text text-muted small">
-                                As Assistant Administrator at Bergen Community College, I manage large-scale testing operations. This role emphasizes compliance with ADA and FERPA standards.
+                            <h5 class="card-title fw-bold mb-3">Operations Management</h5>
+                            <p class="card-text text-dark small">
+                                My professional background as a college Administrator includes directing high-stakes testing operations and managing workflow efficiency. I ensure data integrity, regulatory compliance, and smooth technical integration across institutional systems.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 d-flex">
-                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                    <div class="card h-100 border-0 shadow-lg text-center card-hover">
                         <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-3">Future Goals</h5>
-                            <p class="card-text text-muted small">
-                                I plan to pursue both an MBA and a PhD. My goal is to advance ethical, transparent, and impactful AI within the field of healthcare leadership.
+                            <h5 class="card-title fw-bold mb-3">Strategic Career Path</h5>
+                            <p class="card-text text-dark small">
+                                I plan to pursue dual graduate studies (MBA and PhD) to merge technical expertise with leadership vision. My ultimate goal is to lead the ethical and impactful deployment of AI solutions in healthcare and technology governance.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 d-flex">
-                    <div class="card h-100 border-0 shadow-lg text-center transition" style="border-radius: 1rem; transition: transform .2s;">
+                    <div class="card h-100 border-0 shadow-lg text-center card-hover">
                         <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-3">Interests & Activities</h5>
-                            <p class="card-text text-muted small">
-                                My interests include tutoring youth in STEM subjects, cycling, hiking, and attending concerts. I also enjoy developing creative portfolio projects.
+                            <h5 class="card-title fw-bold mb-3">Personal & Extracurricular</h5>
+                            <p class="card-text text-dark small">
+                                I actively mentor students in STEM fields and maintain an active lifestyle through cycling and hiking. I enjoy building creative side projects that continuously challenge and broaden my engineering skills and technical knowledge base.
                             </p>
                         </div>
                     </div>
@@ -134,7 +143,6 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="footer page-footer font-small">
             <div class="container">
                 <div class="row">

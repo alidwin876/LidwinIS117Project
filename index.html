@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume | Alexander Lidwin</title>
+    <title>Alexander Lidwin Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -19,31 +19,27 @@
                     bg-dark navbar-dark
                     col-12">
 
-            <!-- Brand -->
-            <a class="navbar-brand" href="index.html">Alexander Lidwin</a>
-            <!-- Responsive Button for the smaller menu -->
+            <a class="navbar-brand d-none d-md-block" href="index.html">Alexander Lidwin</a>
             <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+                    aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav" style="gap: 1em;">
-                    <!-- Links -->
-                    <!-- DEVELOPER: Alexander Lidwin, IS117-005, Fall 2025 -->
+                <ul class="navbar-nav gap-3">
                     <li class="nav-item">
-                        <!-- changing the names of the links in the nav bar -->
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Me</a>
                     </li>
-                    <!-- I moved the dropdown here because it is where it appears in my wireframe -->
-                    <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="research/research.html" id="navbardrop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Research
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="research/research.html">All Research</a></li>
                             <li><a class="dropdown-item" href="research/ongoing.html">Ongoing Research</a></li>
                             <li><a class="dropdown-item" href="research/past.html">Past Research</a></li>
                         </ul>
@@ -60,87 +56,62 @@
                 </ul>
             </div>
         </nav>
-        <!--
-                <div class="row">
-                <p class="col-1">Col 1</p>
-                <p class="col-1">Col 2</p>
-                <p class="col-1">Col 3</p>
-                <p class="col-1">Col 4</p>
-                <p class="col-1">Col 5</p>
-                <p class="col-1">Col 6</p>
-                <p class="col-1">Col 7</p>
-                <p class="col-1">Col 8</p>
-                <p class="col-1">Col 9</p>
-                <p class="col-1">Col 10</p>
-                <p class="col-1">Col 11</p>
-                <p class="col-1">Col 12</p>
-                </div>
-        -->
 
-        <!-- DEVELOPER: Alexander Lidwin, IS117-005, Fall 2025 -->
 
-        <!-- Jumbotron Section -->
-        <!-- Jumbotron / Hero Section -->
-        <section class="container-fluid py-5 bg-dark text-white text-center">
+        <section class="container-fluid py-3 bg-secondary text-white text-center">
             <div class="container py-5">
                 <h1 class="display-3 fw-bold mb-3">Alexander Lidwin</h1>
-                <h3 class="fw-normal mb-4 text-info">AI & Medical Informatics Researcher | Cybersecurity Analyst </h3>
+                <h3 class="fw-normal mb-4 text-info">AI & Medical Informatics Researcher | Cybersecurity Analyst</h3>
                 <p class="lead text-light mx-auto" style="max-width: 700px;">
-                    Bridging technology and medicine through artificial intelligence, computational image analysis, and data-driven innovation.
+                    Advancing the intersection of artificial intelligence, medicine, and secure systems through rigorous research and data-driven development.
                 </p>
-                <a href="/resume.html" class="btn btn-outline-info btn-lg mt-3 px-4 py-2">Resume</a>
+                <p class="text-light my-3">View my professional qualifications</p>
+                <a href="resume.html" class="btn btn-outline-info btn-lg px-4 py-2">Resume</a>
             </div>
-
-            <!-- Optional subtle background image overlay -->
-            <div class="jumbotron-bg"></div>
         </section>
 
-
-        <!-- Cards Section -->
+        <div class="container-fluid bg-dark pt-2 pb-3 border-top border-info border-3">
+            <div class="container">
+                <div class="lead text-center text-light mb-0">Explore my expertise below!</div>
+            </div>
+        </div>
         <section class="cards-section bg-light py-5">
             <div class="container">
                 <div class="row g-4 justify-content-center text-center">
 
-                    <!-- About Me -->
                     <div class="col-12 col-md-4 d-flex">
                         <a href="about.html" class="text-decoration-none w-100">
-                            <div class="card h-100 shadow-sm w-100 clickable-card bg-light">
+                            <div class="card h-100 shadow-sm w-100 clickable-card bg-info bg-hover-dark">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                                     <h5 class="card-title fw-bold mt-3 mb-3 text-dark">About Me</h5>
-                                    <p class="text-muted">
-                                        A snapshot of my education and passion for technology, reflecting my academic roots,
-                                        adaptability, and ongoing pursuit of knowledge in AI, cybersecurity, and emerging digital systems.
+                                    <p class="text-dark">
+                                        A detailed overview of my technical background, academic foundation, and commitment to innovation in AI, cybersecurity, and health-focused computing.
                                     </p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Research -->
                     <div class="col-12 col-md-4 d-flex">
                         <a href="research/research.html" class="text-decoration-none w-100">
-                            <div class="card h-100 shadow-sm w-100 clickable-card bg-light">
+                            <div class="card h-100 shadow-sm w-100 clickable-card bg-info bg-hover-dark">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                                     <h5 class="card-title fw-bold mt-3 mb-3 text-dark">Research</h5>
-                                    <p class="text-muted">
-                                        My research focuses on bioinformatic cloning studies, the development of VOC chemical
-                                        smart sensors, and large language model analysis for medical image captioning.
+                                    <p class="text-dark">
+                                        Work spanning bioinformatic modeling, sensor system experimentation, and advanced evaluation of large language models for clinical image captioning improvement.
                                     </p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Work -->
                     <div class="col-12 col-md-4 d-flex">
                         <a href="work.html" class="text-decoration-none w-100">
-                            <div class="card h-100 shadow-sm w-100 clickable-card bg-light">
+                            <div class="card h-100 shadow-sm w-100 clickable-card bg-info bg-hover-dark">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                                     <h5 class="card-title fw-bold mt-3 mb-3 text-dark">Work</h5>
-                                    <p class="text-muted">
-                                        Explore my current and past assignments, reflecting my academic involvement and
-                                        multidisciplinary experience in game system development, paralegal assistance, and
-                                        enrollment testing administration at Bergen Community College.
+                                    <p class="text-dark">
+                                        Professional experience across information technology, academic research support, digital systems development, and student testing operations.
                                     </p>
                                 </div>
                             </div>
@@ -151,13 +122,6 @@
             </div>
         </section>
 
-
-        <!-- <div class="col-sm-12 text-center">
-             <h2>h2 Bootstrap heading (24px)</h2>
-             <h3>h2 Bootstrap heading (18px)</h3>
-         </div> -->
-
-        <!-- Footer -->
         <footer class="footer page-footer font-small">
             <div class="container">
                 <div class="row">
@@ -168,13 +132,11 @@
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
 
-
-<!-- Javascript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous">
-    </script>
 
 </body>
 </html>

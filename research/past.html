@@ -10,38 +10,19 @@
           crossorigin="anonymous">
     <link href="../css/main.css" rel="stylesheet">
 
-    <style>
-        .card-img-placeholder {
-            width: 100%;
-            height: 150px;
-            background-color: #e9ecef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6c757d;
-            font-style: italic;
-            border: 1px solid #dee2e6;
-        }
-        .text-section {
-            min-height: 150px;
-        }
-        .card-footer img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 0.25rem;
-            margin-bottom: 1rem;
-        }
-    </style>
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
-        <nav class="navbar navbar-expand-md justify-content-start bg-dark navbar-dark col-12">
-            <a class="navbar-brand" href="../index.html">Alexander Lidwin</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-md
+            justify-content-start
+            bg-dark navbar-dark
+            col-12">
+
+            <a class="navbar-brand d-none d-md-block" href="../index.html">Alexander Lidwin</a>            <button class="navbar-toggler" type="button"
+                                                                                                                   data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav" style="gap: 1em;">
                     <li class="nav-item">
@@ -51,10 +32,12 @@
                         <a class="nav-link" href="../about.html">About Me</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="research.html" id="navbardrop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Research
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="research.html">Research Hub</a></li>
                             <li><a class="dropdown-item" href="ongoing.html">Ongoing Research</a></li>
                             <li><a class="dropdown-item" href="past.html">Past Research</a></li>
                         </ul>
@@ -85,11 +68,10 @@
                     </a>
                 </div>
 
-                <h1 class="display-4 fw-bold mb-4 text-dark text-center">Past Research</h1>
+                <h1 class="display-4 fw-bold mb-4 text-dark text-center">Past Research Projects</h1>
                 <p class="lead text-muted text-center mb-5">
-                    A look back at prior academic and technical projects that formed the groundwork for my current research interests and technical skillset.
+                    A collection of earlier academic and technical projects that established the foundation for my current work, highlighting the skills, methods, and research directions that continue to influence my development today.
                 </p>
-                <hr class="mb-5">
 
                 <div class="row row-cols-1 row-cols-md-2 g-5">
 

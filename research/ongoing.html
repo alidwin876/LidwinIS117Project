@@ -12,38 +12,34 @@
 
 </head>
 <body>
+
+
 <div class="container-fluid">
     <div class="row">
         <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
+            justify-content-start
+            bg-dark navbar-dark
+            col-12">
 
-            <!-- Brand -->
-            <a class="navbar-brand" href="../index.html">Alexander Lidwin</a>
-            <!-- Responsive Button for the smaller menu -->
-            <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand d-none d-md-block" href="../index.html">Alexander Lidwin</a>            <button class="navbar-toggler" type="button"
+                                                                                                                   data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav" style="gap: 1em;">
-                    <!-- Links -->
-                    <!-- DEVELOPER: Alexander Lidwin, IS117-005, Fall 2025 -->
                     <li class="nav-item">
-                        <!-- changing the names of the links in the nav bar -->
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../about.html">About Me</a>
                     </li>
-                    <!-- I moved the dropdown here because it is where it appears in my wireframe -->
-                    <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="research.html" id="navbardrop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Research
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="research.html">Research Hub</a></li>
                             <li><a class="dropdown-item" href="ongoing.html">Ongoing Research</a></li>
                             <li><a class="dropdown-item" href="past.html">Past Research</a></li>
                         </ul>
@@ -61,10 +57,12 @@
             </div>
         </nav>
 
+
+
+
         <main class="col-12 py-5">
             <div class="container">
 
-                <!-- Back to Research Hub Button -->
                 <div class="mb-4">
                     <a href="research.html" class="btn btn-outline-secondary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
@@ -75,31 +73,34 @@
                 </div>
 
                 <h1 class="display-4 fw-bold mb-4 text-dark text-center">Ongoing Research Projects</h1>
-                <p class="lead text-muted text-center mb-5">Current studies and projects focusing on AI, data-driven analysis, and medical informatics.</p>
-                <hr class="mb-5">
+                <p class="lead text-muted text-center mb-5">Current work focused on AI, data-driven modeling, and medical informatics. These projects involve building practical machine-learning systems, developing reproducible analytical workflows, and applying computational methods to real scientific and clinical problems.</p>
 
                 <div class="row row-cols-1 row-cols-md-2 g-4">
 
                     <div class="col">
                         <div class="card shadow-sm h-100 border-primary">
-                            <img src="../pictures/umanoide-tHS9j3HWT1s-unsplash.jpg" alt="Medical Image Captioning" class="card-img-top">
+                            <div class="ratio ratio-16x9">
+                                <img src="../pictures/umanoide-tHS9j3HWT1s-unsplash.jpg" alt="Medical Image Captioning" class="card-img-top object-fit-cover">
+                            </div>
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title fw-bold text-primary">LLM Analysis for Medical Image Captioning</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Status: Active - Writing Publication</h6>
                                 <p class="card-text">
                                     This project explores the capabilities of large language models (LLMs) in accurately generating descriptive captions for complex medical images (e.g., MRI and CT scans). The goal is to improve diagnostic efficiency through automated documentation.
                                 </p>
-                                <ul class="list-group list-group-flush small mb-3">
-                                    <li class="list-group-item"><strong>Discipline:</strong> LLM Processing, Medical Informatics</li>
-                                    <li class="list-group-item"><strong>Expected Completion:</strong> Winter 2025</li>
-                                </ul>
-                                <div class="mb-3">
-                                    <div class="d-flex justify-content-between mb-1">
-                                        <small class="text-muted">Project Progress</small>
-                                        <small class="text-muted fw-bold">80%</small>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="mt-auto">
+                                    <ul class="list-group list-group-flush small mb-3">
+                                        <li class="list-group-item"><strong>Discipline:</strong> LLM Processing, Medical Informatics</li>
+                                        <li class="list-group-item"><strong>Expected Completion:</strong> Winter 2025</li>
+                                    </ul>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <small class="text-muted">Project Progress</small>
+                                            <small class="text-muted fw-bold">80%</small>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -108,24 +109,28 @@
 
                     <div class="col">
                         <div class="card shadow-sm h-100 border-info">
-                            <img src="../pictures/1920_sensors.jpg" alt="VOC Chemical Smart Sensor" class="card-img-top">
+                            <div class="ratio ratio-16x9">
+                                <img src="../pictures/1920_sensors.jpg" alt="VOC Chemical Smart Sensor" class="card-img-top object-fit-cover">
+                            </div>
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title fw-bold text-info">Development of VOC Chemical Smart Sensors</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Status: Active - Prototype Testing</h6>
                                 <p class="card-text">
                                     A multidisciplinary effort to design and test low-cost, high-sensitivity smart sensors for detecting Volatile Organic Compounds (VOCs) in environmental settings. This work aims to enhance real-time air quality monitoring systems.
                                 </p>
-                                <ul class="list-group list-group-flush small mb-3">
-                                    <li class="list-group-item"><strong>Discipline:</strong> Electrical and Chemical Engineering</li>
-                                    <li class="list-group-item"><strong>Expected Completion:</strong> Winter 2025</li>
-                                </ul>
-                                <div class="mb-3">
-                                    <div class="d-flex justify-content-between mb-1">
-                                        <small class="text-muted">Project Progress</small>
-                                        <small class="text-muted fw-bold">70%</small>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="mt-auto">
+                                    <ul class="list-group list-group-flush small mb-3">
+                                        <li class="list-group-item"><strong>Discipline:</strong> Electrical and Chemical Engineering</li>
+                                        <li class="list-group-item"><strong>Expected Completion:</strong> Winter 2025</li>
+                                    </ul>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <small class="text-muted">Project Progress</small>
+                                            <small class="text-muted fw-bold">70%</small>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

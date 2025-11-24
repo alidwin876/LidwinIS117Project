@@ -20,14 +20,14 @@
                     col-12">
 
             <!-- Brand -->
-            <a class="navbar-brand" href="index.html">Alexander Lidwin</a>
+            <a class="navbar-brand d-none d-md-block" href="index.html">Alexander Lidwin</a>
             <!-- Responsive Button for the smaller menu -->
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav" style="gap: 1em;">
+                <ul class="navbar-nav gap-3">
                     <!-- Links -->
                     <!-- DEVELOPER: Alexander Lidwin, IS117-005, Fall 2025 -->
                     <li class="nav-item">
@@ -40,10 +40,12 @@
                     <!-- I moved the dropdown here because it is where it appears in my wireframe -->
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="research/research.html" id="navbardrop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Research
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="research/research.html">All Research</a></li>
                             <li><a class="dropdown-item" href="research/ongoing.html">Ongoing Research</a></li>
                             <li><a class="dropdown-item" href="research/past.html">Past Research</a></li>
                         </ul>
@@ -60,6 +62,7 @@
                 </ul>
             </div>
         </nav>
+
 
 
         <!-- Both columns must be inside the same .row -->
