@@ -1,6 +1,5 @@
 /* DEVELOPER: Alexander Lidwin, IS117-005, Fall 2025 */
 
-
 .footer {
     position: fixed;
     left: 0;
@@ -13,25 +12,25 @@
     font-size: 0.5rem;
 }
 
-/* CARDS Smooth interactive hover for cards */
+/* clickable card for the home page */
 .clickable-card {
     transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
-/* Hover lift + background change */
 .clickable-card:hover {
     transform: translateY(-5px);
-    background-color: #ffffff !important; /* Light → White */
+    background-color: #fff9d6 !important;
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
+/* banner styling */
 .banner-img {
     height: 350px;
     object-fit: cover;
 }
 
-/* Card Hover Effect */
+/* hover for home page */
 .card-hover {
     border-radius: 1rem;
     transition: transform 0.2s ease-in-out;
@@ -41,49 +40,37 @@
     transform: translateY(-5px);
 }
 
-/* Full Resume Section Container Styling (for the whole block + title) */
+/* resume container and hovers */
 .resume-section-container {
-    padding: 1.5rem; /* Padding for the entire container */
-    margin-bottom: 2rem; /* Space below the container */
+    padding: 1.5rem;
+    margin-bottom: 2rem;
     border-radius: 0.5rem;
-    background-color: #f8f9fa; /* Light background for the section */
+    background-color: #f8f9fa;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 1px solid #dee2e6; /* subtle border */
+    border: 1px solid #dee2e6;
 }
 
 .resume-section-container:hover {
-    transform: translateY(-8px); /* More lift for the whole section */
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important; /* More pronounced shadow */
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
     cursor: pointer;
-    background-color: #ffffff; /* White background on hover */
+    background-color: #ffffff;
 }
 
-
-/* Optional: Clickable Card Hover Effect (for index.html) */
-.clickable-card {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.clickable-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
-}
-
-/* Custom style to force a consistent image height and object fit */
+/* research images */
 .research-img {
-    height: 120px; /* Adjust this height as needed to fit your design */
+    height: 120px;
     object-fit: cover;
-    /* NEW: Add transition for smooth scaling */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* NEW: Hover effect to make the image "pop" */
 .research-img:hover {
-    transform: scale(1.05); /* Scales the image up by 5% */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important; /* Adds a noticeable shadow */
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
     cursor: pointer;
 }
 
+/* card footer image */
 .card-footer img {
     width: 100%;
     height: 200px;
@@ -92,7 +79,7 @@
     margin-bottom: 1rem;
 }
 
-/* Work Experience Cards - Hover Lift Effect */
+/* lifting card affect */
 .hover-lift-card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -103,18 +90,16 @@
     cursor: pointer;
 }
 
-/* Work Experience Page - Banner Text Styling */
 .work-banner-text {
     max-width: 800px;
     color: #ced4da;
 }
 
-/* Work Experience Page - Main Container */
 .work-container {
     max-width: 1400px;
 }
 
-/* Work Experience Page - Card Border Colors */
+/* work experience card */
 .work-card-blue {
     border-left: 4px solid #0d6efd !important;
 }
